@@ -1,0 +1,92 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-shadow: 10px 10px 10px rgba(0.2, 0.2, 0.2, 0.2);
+  border-bottom: 1px solid rgb(202, 202, 202);
+  position: fixed;
+  background-color: white;
+
+}
+
+.mid_navbar {
+  display: flex;
+}
+
+.mid_navbar li {
+  margin: 0 15px;
+  position: relative;
+  /* Adicione position: relative */
+}
+
+.mid_navbar li span:hover {
+  padding-bottom: 20px;
+  border-bottom: 2px solid red;
+}
+
+.mid_navbar li:hover .mid_options {
+  display: block;
+  /* Mostra o menu suspenso quando passa o mouse */
+  width: 200px;
+
+}
+
+.mid_options {
+  margin-top: 20px;
+  position: absolute;
+  display: none;
+  top: 100%;
+  z-index: 1;
+  box-shadow: 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+  width: 200px;
+  /* Começa com largura zero */
+  animation: expandWidth 0.4s ease-in-out forwards;
+  /* Aplica a animação */
+  background-color: white;
+}
+
+.mid_options li {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center
+}
+
+.mid_options li:hover {
+  background: rgba(139, 212, 255, 0.112);
+}
+
+.right ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* Alinha verticalmente os itens ao centro */
+}
+
+.right li {
+
+  display: flex;
+  align-items: center;
+  /* Alinha verticalmente os itens ao centro */
+  margin-right: 20px;
+  /* Adicione margem direita para espaçamento */
+}
+
+
+@keyframes expandWidth {
+  from {
+    padding-left: 20px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,30 @@
+/* Estilizando o elemento select */
+.select {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+  margin-bottom: 20px;
+  color: rgb(169, 169, 169);
+
+}
+
+.select option {
+  color: rgb(0, 0, 0);
+}
+
+/* Estilizando a seta do select */
+.select::after {
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/* Estilizando o select quando estiver em foco */
+.select:focus {
+  border-color: #007BFF;
+  outline: none;
+}

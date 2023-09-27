@@ -1,0 +1,49 @@
+/* Carro.module.css */
+.carro {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carro_img {
+    width: 900px;
+    text-align: center;
+  }
+  
+  .carro_img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carro_detalhes {
+    margin-left: 20px;
+  }
+  
+  .carro_detalhes_titulo {
+    margin-bottom: 10px;
+  }
+  
+  .carro_detalhes_titulo_MarcaModelo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .carro_detalhes_titulo_versao {
+    font-size: 16px;
+  }
+  .carro_detalhes_inspecoes{
+    display: flex;
+    flex-direction: column;
+  }
+  .carro_detalhes_inspecoes div {
+    margin-bottom: 10px;
+  }
+  
+  .carro_detalhes_inspecoes p:first-child {
+    color: #888; /* Cinza para o primeiro parágrafo */
+  }
+  
+  .carro_detalhes_inspecoes p:last-child {
+    color: #000; /* Preto para o segundo parágrafo */
+    font-weight: bold;
+  }
+  

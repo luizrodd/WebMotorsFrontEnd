@@ -1,0 +1,125 @@
+/* Estilize a barra de rolagem para navegadores Webkit (como o Chrome) */
+
+
+.left::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0; /* Cor da thumb (indicador de rolagem) */
+}
+
+.left::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Cor da trilha da rolagem */
+}
+
+/* Oculte as setas de rolagem */
+.left::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Estilize a barra de rolagem para navegadores que não suportam Webkit */
+.left {
+  scrollbar-width: thin; /* Largura fina da barra de rolagem */
+  scrollbar-color: #050505 #000000; /* Cor da thumb (indicador) e da trilha da rolagem */
+}
+
+/* Oculte as setas de rolagem */
+.left::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+} 
+.left::-webkit-scrollbar:hover{
+  width: 7px;
+}
+
+/* Adicione um hover effect para indicar que a rolagem está disponível */
+.left:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #db1313 #dc0a0a;
+}
+
+/* Adicione um hover effect para indicar que a rolagem está disponível */
+.left:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #db1313 #dc0a0a;
+}
+.Main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+}
+
+.left {
+  padding: 10px;
+  max-width: 17%;
+  max-height: 900px; /* Defina uma altura máxima desejada */
+  background-color: white;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+.right {
+  height: 1920px;
+  max-height:100% ;
+  padding-left: 17%;
+  flex: 1; /* A parte direita ocupará o restante do espaço */
+  background-color: rgba(138, 165, 232, 0.079);
+}
+
+.left_carros_title {
+  text-align: center;
+}
+
+.left_carros_title span {
+  border-bottom: 3px solid red;
+  font-size: 20px;
+}
+
+
+
+.left_searchBar {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.left_searchBar span {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.left_searchBar div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left_brands {
+  margin-bottom: 30px;
+}
+
+.left_brands span {
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.left_detalhes {
+  margin-top: 80px;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+.left_detalhes div{
+  margin-bottom: 20px;
+}
+
+.left_marca {
+  text-align: center;
+}
+.right_top{
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Loja.module.css */

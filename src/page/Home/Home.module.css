@@ -1,0 +1,79 @@
+/* SeuArquivoDeEstilos.module.css */
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Define uma altura mínima de 100% da altura da tela */
+    background-color: #f0f0f0; /* Cor de fundo para a tela */
+}
+
+.content {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    width: 100%; 
+    padding: 20px; /* Espaçamento interno do conteúdo */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #fff; /* Cor de fundo para o conteúdo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* ... Estilos anteriores permanecem os mesmos ... */
+
+.top {
+    background-color: #fff; /* Cor de fundo para a seção superior */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px 10px 0 0; /* Cantos arredondados apenas na parte superior */
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre as li */
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente os elementos */
+    background-color: #fff; /* Cor de fundo para a seção inferior */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 0 0 10px 10px; /* Cantos arredondados apenas na parte inferior */
+}
+
+/* ... Resto do estilo permanece igual ... */
+
+
+.searchContainer {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os elementos */
+    border: 1px solid #ccc; /* Borda para o contêiner do campo de pesquisa */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+.searchIcon {
+    color: #777; /* Cor do ícone de pesquisa */
+    margin-right: 8px; /* Espaçamento entre o ícone e o campo de pesquisa */
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+.verOfertasButton {
+    background-color: red; /* Cor de fundo do botão (vermelho) */
+    color: #fff; /* Cor do texto do botão (branco) */
+    border: none;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Cantos arredondados do botão */
+    cursor: pointer;
+}
+
+.verOfertasButton:hover {
+    opacity: 0.8; /* Diminui a opacidade do botão ao passar o mouse */
+}
